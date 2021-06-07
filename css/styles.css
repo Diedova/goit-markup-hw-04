@@ -8,6 +8,7 @@
   --hero-color: #2f303a;
   --team-color: #f5f4fa;
   --rgba-color: rgba(255, 255, 255, 0.6);
+  --icon-color: #afb1b8;
   --main-font: "Roboto", sans-serif;
   --accent-font: "Raleway", sans-serif;
 }
@@ -102,6 +103,15 @@ a {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero .title {
   margin-bottom: 30px;
@@ -128,7 +138,8 @@ a {
 }
 
 /*Features section */
-
+.icons {
+}
 .pre-title {
   font-weight: bold;
   font-size: 14px;
@@ -153,13 +164,16 @@ a {
 }
 .features-item,
 .box,
-.our-team {
+.our-team,
+.icons-link,
+.client-list {
   display: flex;
 }
 
 .features-item li:not(:last-child),
 .box li:not(:last-child),
-.our-team li:not(:last-child) {
+.our-team li:not(:last-child),
+.client-list li:not(:last-child) {
   margin-right: 30px;
 }
 .work {
@@ -194,15 +208,60 @@ a {
   text-align: center;
   background: var(--white-color);
   border-radius: 0px 0px 4px 4px;
-  /*border-bottom: 2px solid rgba(0, 0, 0, 0.12);
-  border-left: 1px solid rgba(0, 0, 0, 0.2);
-  border-right: 1px solid rgba(0, 0, 0, 0.2);*/
 }
-
+.teams-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 .teams-item img {
   display: block;
 }
+.icons-link {
+  justify-content: center;
+  width: 206px;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: 16px;
+  fill: var(--icon-color);
+}
+.icons-link li {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+}
+.icons-link li:not(:last-child) {
+  margin-right: 10px;
+}
 
+.icons-link li:hover,
+.icons-link li:focus {
+  fill: var(--white-color);
+  stroke: var(--pretty-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--pretty-color);
+  align-items: center;
+}
+/*Client section*/
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-list li {
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+
+  fill: var(--icon-color);
+}
+.client-list li:hover,
+.client-list li:focus {
+  fill: var(--pretty-color);
+
+  border: 1px solid var(--pretty-color);
+}
 /* Portfolio */
 .portfolio-section {
   padding-top: 94px;
