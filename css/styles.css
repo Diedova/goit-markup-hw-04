@@ -11,6 +11,7 @@
   --icon-color: #afb1b8;
   --main-font: "Roboto", sans-serif;
   --accent-font: "Raleway", sans-serif;
+  --footer-icon: #ffffff1a;
 }
 * {
   margin: 0;
@@ -73,6 +74,10 @@ a {
 .media-list {
   color: var(--text-color);
   margin-left: auto;
+}
+.nav-icons {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .header .container {
@@ -138,7 +143,20 @@ a {
 }
 
 /*Features section */
+.features-icons {
+  width: 270px;
+  height: 120px;
+  background: var(--team-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
 .icons {
+  display: inline-flex;
+  width: 70px;
+  height: 70px;
 }
 .pre-title {
   font-weight: bold;
@@ -200,6 +218,7 @@ a {
   line-height: 1.187;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 16px;
 }
 
 .team-member {
@@ -217,32 +236,29 @@ a {
   display: block;
 }
 .icons-link {
-  justify-content: center;
   width: 206px;
-  height: 44px;
   margin: 0 auto;
-  margin-top: 16px;
   fill: var(--icon-color);
 }
 .icons-link li {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+
 .icons-link li:not(:last-child) {
   margin-right: 10px;
 }
-
+.footer .icons-link li:hover,
+.footer .icons-link li:focus,
 .icons-link li:hover,
 .icons-link li:focus {
   fill: var(--white-color);
-  stroke: var(--pretty-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
   background-color: var(--pretty-color);
-  align-items: center;
 }
 /*Client section*/
 .client {
@@ -352,11 +368,32 @@ a {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--rgba-color);
+  width: 231px;
   margin-top: 20px;
+  margin-right: 70px;
 }
 .address li:first-child {
   color: var(--white-color);
 }
 .address li:not(:last-child) {
   margin-bottom: 9px;
+}
+.icon-title {
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  margin-bottom: 20px;
+}
+.footer .container {
+  display: flex;
+}
+.footer .icons-link li {
+  background-color: var(--footer-icon);
+}
+.footer-icons {
+  margin-top: 12px;
 }
