@@ -90,6 +90,10 @@ a {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+.media {
+  display: block;
+  align-items: center;
+}
 
 /* MAIN STYLES */
 .title {
@@ -402,10 +406,11 @@ a {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 .footer .icon-item {
   background-color: var(--footer-icon);
 }
-.footer-icons {
+/*.footer-icons {
   margin-top: 12px;
-}
+}*/
