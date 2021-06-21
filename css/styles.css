@@ -66,6 +66,7 @@ a {
   line-height: 1.143;
   letter-spacing: 0.02em;
   display: flex;
+  align-items: center;
 }
 .nav-list li:not(:last-child),
 .media-list li:not(:last-child) {
@@ -89,10 +90,6 @@ a {
   border: 1px solid #ececec;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-.media {
-  display: block;
-  align-items: center;
 }
 
 /* MAIN STYLES */
@@ -411,6 +408,3 @@ a {
 .footer .icon-item {
   background-color: var(--footer-icon);
 }
-/*.footer-icons {
-  margin-top: 12px;
-}*/
